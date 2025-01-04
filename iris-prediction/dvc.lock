@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  data_collection:
+    cmd: python src/data/make_dataset.py
+    deps:
+    - path: src/data/make_dataset.py
+      hash: md5
+      md5: de98ddbd90418b26efea8e95894b7469
+      size: 424
+    outs:
+    - path: data/raw
+      hash: md5
+      md5: 6ae44599fc466663c9d50db20109e471.dir
+      size: 4818
+      nfiles: 2

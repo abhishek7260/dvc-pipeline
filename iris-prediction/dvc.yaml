@@ -1,0 +1,13 @@
+stages:
+  data_collection:
+    cmd: python src/data/make_dataset.py
+    deps:
+    - src/data/make_dataset.py
+    outs:
+    - data/raw
+  data_preprocessing:
+    cmd: python src/features/build_features.py
+    deps:
+    - src/features/build_features.py
+    outs:
+    - data/processed
