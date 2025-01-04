@@ -42,5 +42,5 @@ processed_test_data = remove_outliers_with_zscore(test_data)
 # Save processed data
 data_path = os.path.join("data", "processed")
 os.makedirs(data_path, exist_ok=True)
-processed_train_data.to_csv(os.path.join(data_path, "processed_train.csv"), index=False)
-processed_test_data.to_csv(os.path.join(data_path, "processed_test.csv"), index=False)
+processed_train_data.to_csv(os.path.join(data_path, "processed_train_zscore.csv"), index=False)
+processed_test_data.to_csv(os.path.join(data_path, "processed_test_zcore.csv"), index=False)
